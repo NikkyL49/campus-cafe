@@ -72,32 +72,34 @@
 	     Can explicitly set .sidebar { grid-row: 2; } and .ads { grid-row: 3; } (or similar  depending on their header span) to ensure they stack vertically in the right-hand column
         */
 
-        .head {
-            grid-column: 1 / -1;
-        }
+            .head {
+                grid-column: 1 / -1;
+            }
 
-        .nav {
-            grid-column: 1 / 3;
-        }
+            .nav {
+                grid-column: 1 / 3;
+                grid-row: 2 / 4;
+            }
 
-        .content {
-            grid-column: 3 / 11;
-        }
+            .content {
+                grid-column: 3 / 11;
+                grid-row: 2 / 4;
+            }
 
-        .sidebar {
-            grid-column: 11 / -1;
-            grid-row: 2;
-        }
+            .sidebar {
+                grid-column: 11 / -1;
+                grid-row: 2;
+            }
 
-        .ads {
-            grid-column: 11 / -1;
-            grid-row: 3;
-        }
+            .ads {
+                grid-column: 11 / -1;
+                grid-row: 3;
+            }
 
-        .footer {
-            grid-column: 1 / -1;
+            .footer {
+                grid-column: 1 / -1;
+            }
         }
-    }
 
         .head img {
             width: 100%;
